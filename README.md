@@ -1,2 +1,2 @@
 # myweb-projects
-This are just my practice projects
+These are just my practice projects
