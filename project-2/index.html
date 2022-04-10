@@ -21,6 +21,21 @@
             color: green;
         }
     </style>
+     <script>
+        var indexValue = 0;
+        function slideShow(){
+          setTimeout(slideShow, 7500);
+          var x;
+          const img = document.querySelectorAll("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
+        }
+        slideShow();
+      </script>
 </head>
 <body>
     <nav class="flex flex-row bg-green-800">
@@ -49,6 +64,9 @@
 </nav>
 <div id="schoolImage" style="border: 2px solid black; border-radius: 10px;" class="mx-6 my-2 px-3 py-3">
     <img style="height: 450px; width: 100%;" class="" src="assets/loyolaimage.jpg" alt="">
+    <img style="height: 450px; width: 100%;" class="schoolimg" src="assets/loyolaimg2.jpg" alt="">
+    <img style="height: 450px; width: 100%;" class="schoolimg" src="assets/loyolaimg3.jpg" alt="">
+    <img style="height: 450px; width: 100%;" class="schoolimg" src="assets/loyolaimg4.jpg" alt="">
 </div>
 <!--For the rest of the body-->
 <div style="border: 2px solid white; border-radius: 10px;" class="flex justify-center mx-2 my-2 px-2 py-1">
