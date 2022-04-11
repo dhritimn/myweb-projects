@@ -1,0 +1,100 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(22 101 52);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: rgb(241, 238, 21);
+    color: rgb(22 101 52);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(22 101 52);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(241, 238, 21);
+    color: rgb(22 101 52);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  @media (min-width: 915px) {
+    .mobileview{
+      display: none;
+    }
+    .schoolmob{
+      display: none;
+    }
+    .sci{
+      height: 450px;
+      width: 100%;
+    }
+    #sclLogo{
+      height: 193px;
+      width: 292px;
+    }
+  }
+  @media (max-width: 915px){
+    #compnav{
+      display: none;
+    }
+    .schoolcomp{
+      display: none;
+    }
+    #bodybox{
+      flex-wrap: wrap;
+    }
+    #bottomnav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .sci{
+      display: block;
+      width: 100%;
+      height: 271px;
+    }
+    #sclLogo{
+      height: 130px;
+      width: 285px;
+    }
+  }
