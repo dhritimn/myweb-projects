@@ -72,6 +72,9 @@
       height: 193px;
       width: 292px;
     }
+    #bottomnav{
+      text-align: center;
+    }
   }
   @media (max-width: 915px){
     #compnav{
